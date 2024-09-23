@@ -26,7 +26,7 @@ Ensure that you have the following software installed on your local machine:
 First, clone the repository to your local machine using Git:
 
 ```bash
-[git clone https://github.com/your-username/search-aggregation-app.git](https://github.com/sophia17032002/Revoltronx)
+[git clone https://github.com/sophia17032002/Revoltronx]
 cd Revoltronx
 ```
 
@@ -53,7 +53,7 @@ You will need API keys for the following services:
 - **OpenLibrary API**
 - **Reddit API**
 
-#### **Create a `.env` file in the `server/` directory and add your API keys like so:**
+#### **Create a `.env` file in the `server/` directory and add your API keys like so or add it in server/search.js:**
 
 ```bash
 YOUTUBE_API_KEY=your-youtube-api-key
@@ -118,8 +118,8 @@ search-aggregation-app/
 │   └── package.json     # Frontend dependencies and scripts
 │
 ├── server/              # Backend code
-│   ├── routes/          # API routes for fetching data
-│   └── app.js           # Main server configuration
+│   ├── search.js          # API routes for fetching data
+│   └── index.js           # Main server configuration
 │   └── package.json     # Backend dependencies and scripts
 │
 ├── .env                 # Environment variables (API keys)
