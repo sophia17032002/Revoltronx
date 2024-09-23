@@ -26,8 +26,8 @@ Ensure that you have the following software installed on your local machine:
 First, clone the repository to your local machine using Git:
 
 ```bash
-git clone https://github.com/your-username/search-aggregation-app.git
-cd search-aggregation-app
+[git clone https://github.com/your-username/search-aggregation-app.git](https://github.com/sophia17032002/Revoltronx)
+cd Revoltronx
 ```
 
 ### **2. Install Dependencies**
