@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* App Background Animation */
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.app {
+  background: linear-gradient(270deg, #6a228b, #ff6699, #3498db);
+  background-size: 500% 500% ;
+  animation: gradient-animation 5s ease infinite; 
+}
+
+/* Header Styles */
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out; 
+}
+
+/* Search Bar Styles */
+.search-bar {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input {
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  width: 300px;
+  transition: border-color 0.3s;
+}
+
+.search-bar input:focus {
+  border-color: #8707a4; 
+}
+
+.search-bar button {
+  padding: 10px 15px;
+  background-color: #ff6699;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: #ffcc00; 
+}
+
+/* Filter Styles */
+.filter-container {
+  margin: 20px 0;
+}
+
+.filter-container label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.filter-container select {
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.filter-container select:focus {
+  border-color: #ffcc00; 
+}
+
+/* Loader Styles */
+.loader {
+  border: 6px solid #f3f3f3; 
+  border-top: 6px solid #ff6699; 
+  border-radius: 70%;
+  width: 60px; 
+  height: 60px; 
+  animation: spin 1s linear infinite; 
+  position: absolute; 
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%); 
+}
+
+/* Animations */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .search-bar input {
+    width: 100%;
+  }
+
+  .filter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter-container select {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
